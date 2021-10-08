@@ -16,10 +16,9 @@ func NewDirector(name string) *Director {
 	}
 }
 
-// This function gives task to Programmer and
+// This function gives task to TeamLead and
 // writes tasks to "Tasks"
-func (d Director) GiveDevTask(t Task, p *Programmer) error {
-	p.Tasks = append(p.Tasks, t)
-
+func (d *Director) GiveTeamLeadTask(t *Task, tl *TeamLead) error {
+	tl.Tasks = append(tl.Tasks, t)
 	return nil
 }
