@@ -8,7 +8,7 @@ type TeamLead struct {
 var teamLeadIdCounter int
 
 // Constructor
-func NewTeamLead(id int, name string) *TeamLead {
+func NewTeamLead(name string) *TeamLead {
 	teamLeadIdCounter++
 	return &TeamLead{
 		teamLeadIdCounter, name,

@@ -12,7 +12,7 @@ type Programmer struct {
 var programmerIdCounter int
 
 // Constructor
-func NewProgrammer(id int, name string) *Programmer {
+func NewProgrammer(name string) *Programmer {
 	programmerIdCounter++
 
 	return &Programmer{

@@ -8,7 +8,7 @@ type Director struct {
 var directorIdCounter int
 
 // Constructor
-func NewDirector(id int, name string) *Director {
+func NewDirector(name string) *Director {
 	directorIdCounter++
 
 	return &Director{

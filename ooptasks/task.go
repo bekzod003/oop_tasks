@@ -18,7 +18,7 @@ type Task struct {
 var taskIdCounter int
 
 // Constructor
-func NewTask(id int, title string, gb TeamLead, dl string, st string) *Task {
+func NewTask(title string, gb TeamLead, dl string, st string) *Task {
 	taskIdCounter++
 
 	return &Task{
