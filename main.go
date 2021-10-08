@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	. "./ooptasks"
+	. "udevs_roadmap/oop/ooptasks"
 )
 
 func main() {
 	dir := NewDirector("Director1")
-	fmt.Print(dir)
-
+	fmt.Println(dir)
 }
