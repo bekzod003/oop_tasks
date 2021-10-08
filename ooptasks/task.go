@@ -8,7 +8,7 @@ import (
 type Task struct {
 	Id        int
 	Title     string
-	GivenBy   TeamLead
+	GivenBy   Director
 	Deadline  string
 	Status    string
 	CreatedAt string
@@ -18,11 +18,11 @@ type Task struct {
 var taskIdCounter int
 
 // Constructor
-func NewTask(title string, gb TeamLead, dl string, st string) *Task {
+func NewTask(title string, dr Director, dl string, st string) *Task {
 	taskIdCounter++
 
 	return &Task{
-		taskIdCounter, title, gb, dl, st, fmt.Sprint(time.Now()), fmt.Sprint(time.Now()),
+		taskIdCounter, title, dr, dl, st, fmt.Sprint(time.Now()), fmt.Sprint(time.Now()),
 	}
 }
 
